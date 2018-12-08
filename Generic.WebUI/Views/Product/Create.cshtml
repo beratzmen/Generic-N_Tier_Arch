@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>YENİ PRODUCT OLUŞTUR</h2>
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post))
+{
+    <input type="text" name="ProductName" />
+    <input type="text" name="UnitPrice" />
+    <input type="submit" value="KAYDET" />
+}

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>YENİ CATEGORY OLUŞTUR</h2>
+<br /><br />
+
+@using (Html.BeginForm("Create", "Category", FormMethod.Post))
+{
+    @Html.Label("CategoryName")
+    <input type="text" name="CategoryName" />
+    <br />
+    @Html.Label("CategoryDescription")
+    <input type="text" name="Description" />
+    <br />
+
+    <input type="submit" value="KAYDET" />
+}

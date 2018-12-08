@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<a href="/Product/Index" class="btn btn-default">PRODUCT</a>
+<a href="/Category/Index" class="btn btn-default">CATEGORY</a>
+<a href="/Customer/Index" class="btn btn-default">CUSTOMER</a>
+
+
+<br /><br />
+@using (Html.BeginForm("GetStartName", "Product", FormMethod.Post))
+{
+    @Html.Label("Başlangıç Harfine Göre PRODUCT Arama :")<br />
+    <input name="startsWith" />
+    <input type="submit" class="btn btn-default" value="ARA" />
+}

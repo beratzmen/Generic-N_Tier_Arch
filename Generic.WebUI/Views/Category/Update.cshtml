@@ -1,0 +1,17 @@
+﻿@model Generic.Entities.Categories
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>CATEGORY GÜNCELLE</h2>
+
+
+
+@using (Html.BeginForm("Update", "Category", FormMethod.Post))
+{
+    <input type="hidden" name="CategoryID" value="@Model.CategoryID" />
+    <input type="text" name="CategoryName" />
+    <input type="text" name="Description" />
+    <input type="submit" value="KAYDET" />
+}

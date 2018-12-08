@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>ORDERS</h2>
+
+<table id="jqGrid"></table>
+<div id="jqGridPager"></div>
+
+<link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" />
+<link href="~/Content/ui.jqgrid.min.css" rel="stylesheet" />
+@section ScriptsSection{
+
+    <script src="~/Scripts/free-jqGrid/i18n/grid.locale-en.js"></script>
+    <script src="~/Scripts/free-jqGrid/i18n/grid.locale-tr.js"></script>
+    <script src="~/Scripts/free-jqGrid/jquery.jqgrid.min.js"></script>
+    <script>
+        $(function () {
+            $grid = $("#jqGrid").jqGrid({
+                url: '@Url.Action("GetData","Order")',
+                type: "GET",
+                datatype: "json",
+                colModel: [
+                    { label: 'CustomerID', name: 'CustomerID', width: 150 },
+                    { label: 'OrderDate', name: 'OrderDate', width: 150 },
+                    { label: 'ShipCity', name: 'ShipCity', width: 150 },
+                    { label: 'ShipPostalCode', name: 'ShipPostalCode', width: 150 }
+                ],
+                viewrecords: true,
+                height: 250,
+                rowList: [10, 20, 30, 40],
+                pager: "#jqGridPager",
+            });
+            $("#jqGrid").jqGrid('navGrid', 'jqGridPager', { edit: false, add: false, del: false });
+        });
+    </script>
+}

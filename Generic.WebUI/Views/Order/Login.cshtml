@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section ScriptsSection{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+}
+<style>
+    .Message {
+        border: 1px solid #ff0000;
+        display: none;
+    }
+</style>
+
+
+<div id="Message" class="Message"></div>
+<form action="" method="post" id="FormLogin" name="FormLogin">
+    <input type="text" placeholder="İsim" name="loginUserName" id="loginUserName" />
+    <br />
+    <input type="text" placeholder="Soyisim" name="loginUserSurName" id="loginUserSurName" />
+    <br />
+    <input type="password" placeholder="Şifre Girin" name="loginPass" id="loginPass" />
+    <br />
+    <input type="button" id="inputBtn" onclick="Validation();" name="" value="Giriş" />
+</form>
+
+<hr />
+<input type="text" id="enter" />
+<textarea id="write" readonly disabled></textarea>
+<hr />
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+    });
+            //$("#enter").keyup(function () {
+        //    $("#write").val($("#enter").val());
+        //});
+
+        //$("#inputBtn").click(function Validation() {
+        //    var LoginUserName = $("#loginUserName").val();
+        //    var LoginUserSurName = $("#loginUserSurName").val();
+        //    var LoginPass = $("#loginPass").val();
+        //    if (LoginUserName === "") {
+        //        $("#Message").css({ "display": "block" });
+        //        $("#Message").html("Kullanıcı Boş Geçilemez.");
+        //    }
+        //});
+</script>

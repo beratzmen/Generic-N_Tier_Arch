@@ -1,0 +1,17 @@
+﻿@model Generic.Entities.Products
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>PRODUCT GÜNCELLE</h2>
+
+
+
+@using (Html.BeginForm("Update", "Product", FormMethod.Post))
+{
+    <input type="hidden" name="ProductID" value="@Model.ProductID" />
+    <input type="text" name="ProductName" />
+    <input type="text" name="UnitPrice" />
+    <input type="submit" value="KAYDET" />
+}

@@ -1,0 +1,22 @@
+﻿@model Generic.WebUI.Models.OrderViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> ORDERS </h2>
+
+
+<div>
+    @foreach (var item in Model.Orders)
+    {
+        @item.CustomerID
+        <hr />
+    }
+
+    <div class="col-md-12">
+        <div class="pager">
+            @Html.Pager(Model.PagingInfo)
+        </div>
+    </div>
+</div>

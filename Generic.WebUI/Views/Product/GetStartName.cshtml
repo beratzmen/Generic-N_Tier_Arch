@@ -1,0 +1,30 @@
+﻿@model  List<Generic.Entities.Products>
+
+@{
+    ViewBag.Title = "GetStartName";
+}
+
+<h2>BAŞLANGIÇ İSMİNE GÖRE PRODUCT LİSTESİ</h2>
+<div class="container">
+    <div class="col-md-12">
+        <div class="row">
+            <table style="width:100%" border="1">
+                <thead>
+                    <tr>
+                        <th style="text-align:center;"> ID </th>
+                        <th style="text-align:center;"> NAME </th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody>
+                        <tr>
+                            <td>@item.ProductID</td>
+                            <td>@item.ProductName</td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+    </div>
+</div>

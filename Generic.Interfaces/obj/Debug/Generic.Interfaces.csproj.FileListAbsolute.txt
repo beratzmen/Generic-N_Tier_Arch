@@ -1,0 +1,15 @@
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Interfaces.dll
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Interfaces.pdb
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Dal.dll
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Entities.dll
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Dal.pdb
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Dal.dll.config
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Entities.pdb
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\Generic.Entities.dll.config
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\obj\Debug\Generic.Interfaces.csprojAssemblyReference.cache
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\obj\Debug\Generic.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\obj\Debug\Generic.Interfaces.csproj.CopyComplete
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\obj\Debug\Generic.Interfaces.dll
+C:\Users\bzmen\Desktop\Generic\Generic.Interfaces\obj\Debug\Generic.Interfaces.pdb

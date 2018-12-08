@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>YENİ CUSTOMER OLUŞTUR</h2>
+
+@using (Html.BeginForm("Create", "Customer", FormMethod.Post))
+{
+    <input type="text" name="CustomerID" />
+    <input type="text" name="CompanyName" />
+    <input type="text" name="PostalCode" />
+    <input type="submit" value="KAYDET" />
+}

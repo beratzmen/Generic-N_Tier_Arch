@@ -1,0 +1,17 @@
+﻿@model Generic.Entities.Customers
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>CUSTOMER GÜNCELLE</h2>
+
+
+
+@using (Html.BeginForm("Update", "Customer", FormMethod.Post))
+{
+    <input type="hidden" name="CustomerID" value="@Model.CustomerID" />
+    <input type="text" name="CompanyName" />
+    <input type="text" name="PostalCode" />
+    <input type="submit" value="KAYDET" />
+}

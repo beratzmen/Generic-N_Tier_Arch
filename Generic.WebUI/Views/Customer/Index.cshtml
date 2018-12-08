@@ -1,0 +1,49 @@
+﻿@model List<Generic.Entities.Customers>
+@{
+    ViewBag.Title = "CUSTOMERS";
+}
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            @using (Html.BeginForm("Get", "Customer"))
+            {
+                <input type="text" placeholder="ID" name="id" />
+                <input type="submit" class="btn btn-default" value="GETİR" />
+            }
+        </div>
+    </div>
+</div>
+<a href="/Customer/Create" class="btn btn-success">YENİ KAYIT</a>
+<br /><br />
+<div class="container">
+    <div class="col-md-12">
+        <div class="row">
+            <table style="width:100%" border="1">
+                <thead>
+                    <tr>
+                        <th style="text-align:center;"> ID </th>
+                        <th style="text-align:center;"> NAME </th>
+                        <th style="text-align:center;"> POSTAL CODE</th>
+                        <th style="text-align:center;"> SİL </th>
+                        <th style="text-align:center;"> GÜNCELLE </th>
+                    </tr>
+                </thead>
+
+                @foreach (var item in Model)
+                {
+                    <tbody>
+                        <tr>
+                            <td>@item.CustomerID</td>
+                            <td>@item.CompanyName</td>
+                            <td>@item.PostalCode</td>
+                            <td style="text-align:center;"><a href="/Customer/Delete/@item.CustomerID" class="btn btn-danger">SİL</a></td>
+                            <td style="text-align:center;"><a href="/Customer/Update/@item.CustomerID" class="btn btn-primary">GÜNCELLE</a></td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+    </div>
+</div>
